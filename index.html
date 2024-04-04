@@ -39,17 +39,33 @@
 
 
 .main {
-
-  background: linear-gradient(to bottom, rgba(0,0,0,1), rgb(31, 29, 29));
-
-
-
-    /* background-image: url('./assets/img/home/design-space-paper-textured-background.jpg'); */
-    /* background-size: cover; or contain, depending on your preference */
-    /* background-repeat: no-repeat; */
-    /* height: 700px; */
-    /* Optionally, you can add more styles like background-position */
+ background-image: url('./assets/img/home/lights-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+  
 }
+
+.main::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 35%;
+      background-color: rgba(0, 0, 0, 0.7); Adjust the alpha value (last parameter) to control the transparency
+      backdrop-filter: blur(10px);
+    }
+
+
+    .ms-2 {
+      /* Other styles */
+      text-stroke: 1px rgb(230, 219, 219); 
+      -webkit-text-stroke: 1px rgb(41, 36, 36);
+       /* For Safari/Chrome */
+      -webkit-text-fill-color: transparent; 
+      text-fill-color: transparent;
+    }
 </style>
   </head>
 
@@ -112,12 +128,13 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
+        <div class="main123">
       <section class="py-4 pt-md-0 pb-8 pb-sm-11 mt-lg-n8">
 
         <div class="container px-md-5">
           <div class="row">
             <div class="col-md-9 col-lg-7" >
-              <h1 class="fs-4 fs-md-6 fs-xl-7 mb-5 mb-lg-0 position-relative z-index-2" style="margin-top: 60px;" >
+              <h1 class="fs-4 fs-md-6 fs-xl-7 mb-5 mb-lg-0 position-relative z-index-2" style=" margin-top: 60px;" >
                <span class="fw-thin text-300">deals with  </span><span class="text-400">Premier Bullion Service .</span></h1>
             </div>
 
@@ -136,17 +153,17 @@
             <div class="col-lg-7 position-relative">
               <div class="position-relative overflow-hidden overflow-md-visible" >
                 
-                <img class="img-fluid" src="assets/img/home/goldbar.png" style="" alt="" />
-                <div class="img-circle p-5 p-md-7 rounded-circle"></div>
-                <div class="img-circle-2 p-5 p-md-7 rounded-circle"></div>
+                <img class="img-fluid" src="assets/img/home/goldbar.png" style="height: 350px;" alt="" />
+                <!-- <div class="img-circle p-5 p-md-7 rounded-circle"></div>
+                <div class="img-circle-2 p-5 p-md-7 rounded-circle"></div> -->
               </div>
-              <div class="position-absolute bottom-n100 col-11 mt-6 d-none d-md-block">
-                <p class="fs-2 lh-1 text-400"> Your premier destination for superior gold investments and service. </p>
+              <div class="position-absolute bottom-n100 col-11 mt-6 d-none d-md-block" >
+                <p class="fs-2 lh-1 text-400" > Your premier destination for superior gold investments and service. </p>
                 <p class="text-300">Your trusted source for top-tier gold investments and unparalleled service.</p>
               </div>
               <div class="position-absolute start-0 bottom-0 d-lg-none"><a class="scroll-indicator text-warning" href="#footer"> <span>SCROLL </span><img src="assets/img/icons/long-arrow.png" alt="" /></a></div>
             </div>
-            <div class="col-2 d-none d-lg-block mb-auto"><img class="img-fluid" src="assets/img/home/360_F_749014417_jcIHvKnH3E50w3omNevEmjOP5tzIpQTm.jpg" alt="" / style="height: ;"></div>
+            <div class="col-2 d-none d-lg-block mb-auto"><img class="img-fluid" src="assets/img/home/360_F_749014417_jcIHvKnH3E50w3omNevEmjOP5tzIpQTm.jpg" alt=""  style="width: 300px ;"></div>
           </div>
         </div>
         <!-- end of .container-->
@@ -157,13 +174,14 @@
 
 
     </main>
+  </div>
     <!-- ===============================================-->
     <!--    End of Main Content-->
     <!-- ===============================================-->
 
 
 
-    <section class="py-3">
+    <section class="py-3" >
 
       <div class="container-fluid px-0">
         <div class="position-absolute w-100 border-dashed-bottom opacity-25 top-5 z-index-1"></div>
@@ -179,7 +197,7 @@
                           <div class="position-absolute start-0 bottom-0 ms-3">
                             <h3 class="text-white">Naif Gold</h3>
                             <p class="text-300">Bullion: Invest in Timeless Value</p>
-                          </div><img class="portfolio-img img-fluid" src="assets/img/home/dark.jpeg"  alt="" />
+                          </div><img class="portfolio-img img-fluid" src="assets/img/home/360_F_749014417_jcIHvKnH3E50w3omNevEmjOP5tzIpQTm.jpg"  alt="" />
                         </div>
                       </div>
                       <div class="col-xl-4 mt-4">
@@ -206,7 +224,7 @@
                           <div class="position-absolute start-0 bottom-0 ms-3">
                             <h3 class="text-white">Naif Gold</h3>
                             <p class="text-300">Bullion: Invest in Timeless Value</p>
-                          </div><img class="portfolio-img img-fluid" src="assets/img/home/christmas-lights-dark-wooden-board.jpg"   alt="" />
+                          </div><img class="portfolio-img img-fluid" src="assets/img/home/tavex-zlota-sztabka-pamp-fortuna-5-g.jpg"   alt="" />
                         </div>
                       </div>
                       <div class="col-xl-4 mt-4">
@@ -217,13 +235,7 @@
                             crafted pieces imbued with the timeless allure of gold. Each jewel in our collection is
                              a masterpiece of artistry and precision, meticulously designed to captivate the senses
                               and evoke a sense of sublime beauty. With unwavering dedication,
-
-
-
-
-
-
-                        </p>
+                           </p>
                       </div>
                     </div>
                   </div>
@@ -241,10 +253,7 @@
                         <p class="fs-0">Naif Gold Trading LLC specializes in gold trading for financial investment purposes. Our services encompass the buying and selling of various forms of gold, including physical gold bullion, gold coins, and gold exchange-traded funds (ETFs). In addition to facilitating trades, we offer comprehensive support services such as secure storage facilities, precise assaying procedures, and efficient logistics solutions. These supplementary services ensure a seamless and reliable experience for our clients, enhancing their confidence in their gold investments.
 
 
-
-
-
-                        </p>
+</p>
                       </div>
                     </div>
                   </div>
@@ -255,7 +264,7 @@
           </div>
         </div>
       </div>
-
+<section>
 
     <footer class="bg-footer-black" id="footer">
       <div class="container py-7 px-md-5">
