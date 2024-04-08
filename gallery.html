@@ -128,11 +128,21 @@
   height: 2px; /* Adjust height as needed */
 }
 
+/* Adjust button layout for small screens */
+/* Adjust button layout for small screens */
+@media (max-width: 767px) {
+    .filter-button {
+        display: block;
+        margin-bottom: 50px;
+        margin-right: 50px; /* Add margin-right for space between buttons */
+        
+        text-align: center;
+    }
+}
 
 
 
-    
-  </style>
+ </style>
 
   <body  style=  " background: linear-gradient(to bottom, rgba(0,0,0,1),rgb(59, 58, 58) );">
 
@@ -249,18 +259,19 @@
 
       <!------ Include the above in your HEAD tag ---------->
       <section>
-              <div class="row">
-              <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <!-- <h1 class="gallery-title">Gallery</h1> -->
-              </div>
+        <div class="row">
+          <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <!-- <h1 class="gallery-title">Gallery</h1> -->
+          </div>
+          
+          <div class="col-xs-12" align="center">
+              <button class="btn btn-default filter-button filter_button" data-filter="all">All</button>
+              <button class="btn btn-default filter-button filter_button" data-filter="hdpe">Minted bars</button>
+              <button class="btn btn-default filter-button filter_button" data-filter="sprinkle">Gold bars</button>
+              <button class="btn btn-default filter-button filter_button" data-filter="irrigation">Silver bars</button> 
+          </div>
+      </div>
       
-              <div align="center">
-                  <button class="btn btn-default filter-button filter_button" data-filter="all">All</button>
-                  <button class="btn btn-default filter-button filter_button" data-filter="hdpe">Minted bars</button>
-                  <button class="btn btn-default filter-button filter_button" data-filter="sprinkle">Gold bars</button>
-                   <button class="btn btn-default filter-button filter_button" data-filter="irrigation">Silver bars</button> 
-              </div>
-              </div>
               <br/>
                      <!-- MINTED BARS -->
                      <div class="row">
