@@ -132,13 +132,14 @@
 /* Adjust button layout for small screens */
 @media (max-width: 767px) {
     .filter-button {
-        display: block;
-        margin-bottom: 50px;
-        margin-right: 50px; /* Add margin-right for space between buttons */
-        
+        display: inline;
+        margin-bottom: 10px; /* Adjust the value to control the vertical space between buttons */
+        margin-right: 10px;  /* Adjust the value to control the horizontal space between buttons */
         text-align: center;
+        margin-top: 5px;
     }
 }
+
 
 
 
@@ -258,20 +259,22 @@
       </section> -->
 
       <!------ Include the above in your HEAD tag ---------->
+      
       <section>
-        <div class="row">
-          <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="row" style="">
+          <div class="col-xs-12" align="center">
+            <button class="btn btn-default filter-button filter_button" data-filter="all">All</button>
+            <button class="btn btn-default filter-button filter_button" data-filter="hdpe">Minted bars</button>
+            <button class="btn btn-default filter-button filter_button" data-filter="sprinkle">Gold bars</button>
+            <button class="btn btn-default filter-button filter_button" data-filter="irrigation">Silver bars</button> 
+        </div>
+          <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12" style="">
               <!-- <h1 class="gallery-title">Gallery</h1> -->
           </div>
           
-          <div class="col-xs-12" align="center">
-              <button class="btn btn-default filter-button filter_button" data-filter="all">All</button>
-              <button class="btn btn-default filter-button filter_button" data-filter="hdpe">Minted bars</button>
-              <button class="btn btn-default filter-button filter_button" data-filter="sprinkle">Gold bars</button>
-              <button class="btn btn-default filter-button filter_button" data-filter="irrigation">Silver bars</button> 
-          </div>
+       
       </div>
-      
+     
               <br/>
                      <!-- MINTED BARS -->
                      <div class="row">
