@@ -72,6 +72,145 @@
     -webkit-text-fill-color: transparent; 
     text-fill-color: transparent;
   }
+
+
+
+
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      width: 600px;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    .card h2 {
+      color: #333;
+    }
+    .card p {
+      color: #666;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px 8px 0 0;
+    }
+    .heading {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+
+
+    .flipper-container {
+    position: relative;
+    perspective: 1000;
+    width: 550px;
+    height: 300px;
+    background-color: transparent;
+  }
+  .flip {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s;
+    margin-top: 20px;
+  }
+  .flipper-container:hover .flip {
+    transform: rotateY(180deg);
+  }
+  .face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+  }
+  .face.back {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+  }
+  .gallery_title {
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+  .gallery_title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+  }
+  .filter_button {
+    font-size: 15px;
+    /* border: 1px solid #42B32F; */
+    border-radius: 0px;
+    text-align: center;
+    color: #f3f1ee;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border-color:rgb(15, 15, 15);
+    margin-top: -90px;
+
+  }
+  .filter_button:hover {
+  color: #f5eeee;
+  background-color: transparent; 
+  border-bottom: 4px solid #FFA500; 
+}
+.gallery_product {
+    margin-bottom: 30px;
+  }
+  .port_image {
+    width: 100%;
+  }
+  .btn btn-default{
+  border: none;
+  
+  }
+
+  
+  .ms-2 {
+    /* Other styles */
+    text-stroke: 1px rgb(230, 219, 219); 
+    -webkit-text-stroke: 1px rgb(94, 84, 84);
+     /* For Safari/Chrome */
+    -webkit-text-fill-color: transparent; 
+    text-fill-color: transparent;
+  }
+
+  .white-line {
+background-color: white;
+height: 2px; /* Adjust height as needed */
+}
+
+/* Adjust button layout for small screens */
+/* Adjust button layout for small screens */
+@media (max-width: 767px) {
+  .filter-button {
+      display: inline;
+      margin-bottom: 10px; /* Adjust the value to control the vertical space between buttons */
+      margin-right: 10px;  /* Adjust the value to control the horizontal space between buttons */
+      text-align: center;
+      margin-top: 5px;
+  }
+}
+
+
+
+  
 </style>
   </head>
 
@@ -279,150 +418,10 @@
 
   
 
-  <style>
-    .cards-container {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .card {
-      width: 600px;
-      background-color: #f0f0f0;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-    }
-    .card h2 {
-      color: #333;
-    }
-    .card p {
-      color: #666;
-    }
-    .card img {
-      width: 100%;
-      border-radius: 8px 8px 0 0;
-    }
-    .heading {
-      text-align: center;
-      margin-top: 40px;
-    }
-  </style>
-
-
-<style>
-  .flipper-container {
-    position: relative;
-    perspective: 1000;
-    width: 550px;
-    height: 300px;
-    background-color: transparent;
-  }
-  .flip {
-    height: 100%;
-    width: 100%;
-    transform-style: preserve-3d;
-    transition: all 1s;
-    margin-top: 20px;
-  }
-  .flipper-container:hover .flip {
-    transform: rotateY(180deg);
-  }
-  .face {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    backface-visibility: hidden;
-  }
-  .face.back {
-    display: block;
-    transform: rotateY(180deg);
-    box-sizing: border-box;
-    color: #fff;
-    text-align: center;
-  }
-  .gallery_title {
-    font-size: 36px;
-    color: #42B32F;
-    text-align: center;
-    font-weight: 500;
-    margin-bottom: 50px;
-  }
-  .gallery_title:after {
-    content: "";
-    position: absolute;
-    width: 7.5%;
-    left: 46.5%;
-    height: 45px;
-    border-bottom: 1px solid #5e5e5e;
-  }
-  .filter_button {
-    font-size: 15px;
-    /* border: 1px solid #42B32F; */
-    border-radius: 0px;
-    text-align: center;
-    color: #f3f1ee;
-    margin-bottom: 10px;
-    cursor: pointer;
-    background-color: transparent;
-    border-color:rgb(15, 15, 15);
-    margin-top: -90px;
-
-  }
-  .filter_button:hover {
-  color: #f5eeee;
-  background-color: transparent; 
-  border-bottom: 4px solid #FFA500; 
-}
-.gallery_product {
-    margin-bottom: 30px;
-  }
-  .port_image {
-    width: 100%;
-  }
-  .btn btn-default{
-  border: none;
-  
-  }
-
-  
-  .ms-2 {
-    /* Other styles */
-    text-stroke: 1px rgb(230, 219, 219); 
-    -webkit-text-stroke: 1px rgb(94, 84, 84);
-     /* For Safari/Chrome */
-    -webkit-text-fill-color: transparent; 
-    text-fill-color: transparent;
-  }
-
-  .white-line {
-background-color: white;
-height: 2px; /* Adjust height as needed */
-}
-
-/* Adjust button layout for small screens */
-/* Adjust button layout for small screens */
-@media (max-width: 767px) {
-  .filter-button {
-      display: inline;
-      margin-bottom: 10px; /* Adjust the value to control the vertical space between buttons */
-      margin-right: 10px;  /* Adjust the value to control the horizontal space between buttons */
-      text-align: center;
-      margin-top: 5px;
-  }
-}
+ 
 
 
 
-
-</style>
-
-
-
-
-</head>
-<body>
 
 <h1 class="heading" style="margin">why choose us</h1>
 
