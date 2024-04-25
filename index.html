@@ -113,6 +113,7 @@
     width: 550px;
     height: 300px;
     background-color: transparent;
+    margin-right: 50px;
   }
   .flip {
     height: 100%;
@@ -359,7 +360,9 @@ height: 2px; /* Adjust height as needed */
                         </div>
                       </div>
                       <div class="col-xl-4 mt-4">
-                        <p class="fs-0">Since its establishment in 2016, Naif Gold Trading LLC has quickly risen as a
+                        <p class="fs-0">
+                          <h1 style="color: #f3f1ee;">about us</h1> 
+                          Since its establishment in 2016, Naif Gold Trading LLC has quickly risen as a
                            prominent player in the gold bullion industry under the guidance of Mr. Naif Mubarak, Mr.
                             Abdulla Amoudi, and Mr. Abdul Salam. Specializing in 24ct gold bars, gold coins, and minted bars, 
                             the company is known for its superior products, competitive prices, 
@@ -380,7 +383,10 @@ height: 2px; /* Adjust height as needed */
                         </div>
                       </div>
                       <div class="col-xl-4 mt-4">
-                        <p class="fs-0">Naif Gold stands as a beacon of opulence and refinement, 
+                        <p class="fs-0">
+                          
+                          <h1 style="color: #f3f1ee;">Mission</h1>
+                          Naif Gold stands as a beacon of opulence and refinement, 
                           celebrated across the globe for its meticulously assembled assortments of jewelry,
                            epitomizing the zenith of luxury and sophistication. Our meticulously curated selection 
                            exudes an aura of unparalleled elegance, offering an extraordinary array of meticulously
@@ -402,7 +408,10 @@ height: 2px; /* Adjust height as needed */
                         </div>
                       </div>
                       <div class="col-xl-4 mt-4">
-                        <p class="fs-0">Naif Gold Trading LLC specializes in gold trading for financial investment purposes. Our services encompass the buying and selling of various forms of gold, including physical gold bullion, gold coins, and gold exchange-traded funds (ETFs). In addition to facilitating trades, we offer comprehensive support services such as secure storage facilities, precise assaying procedures, and efficient logistics solutions. These supplementary services ensure a seamless and reliable experience for our clients, enhancing their confidence in their gold investments.</p>
+                        <p class="fs-0">
+                          <h1 style="color: #f3f1ee;">Vision</h1>
+                          
+                          Naif Gold Trading LLC specializes in gold trading for financial investment purposes. Our services encompass the buying and selling of various forms of gold, including physical gold bullion, gold coins, and gold exchange-traded funds (ETFs). In addition to facilitating trades, we offer comprehensive support services such as secure storage facilities, precise assaying procedures, and efficient logistics solutions. These supplementary services ensure a seamless and reliable experience for our clients, enhancing their confidence in their gold investments.</p>
                       </div>
                     </div>
                   </div>
@@ -428,21 +437,32 @@ height: 2px; /* Adjust height as needed */
 <div class="cards-container" style="margin-bottom: 40px;">
   <div class="card">
     <!-- <img src="https://via.placeholder.com/300" alt="Placeholder Image"> -->
-
-    <div class=" col-lg-3 col-md-3 col-sm-6 col-xs-12 filter hdpe">
-      <div class="flipper-container">
-        <div class="flip">
-          <div class="front face text-center" style="margin-left: 50px;">
-            <img src="assets/img/home/home123.jpeg" height="300px">
-          </div>
-        <div class="back face">
-           <img src="assets/img/home/goldbar.png" height="300px">
-          
+    <style>
+      @media only screen and (max-width: 767px) {
+        .col-lg-3,
+        .col-md-3,
+        .col-sm-6,
+        .col-xs-12 {
+          display: none;
+        }
+      }
+    </style>
+    
+    <div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 filter hdpe">
+        <div class="flipper-container">
+          <div class="flip">
+            <div class="front face text-center" style="margin-left: 50px;">
+              <img src="assets/img/home/home123.jpeg" height="300px">
+            </div>
+            <div class="back face">
+              <img src="assets/img/home/goldbar.png" height="300px">
+            </div>
           </div>
         </div>
       </div>
-     
     </div>
+    
 
     <div class="content">
       <!-- <h2>Card 1</h2>
@@ -472,7 +492,7 @@ height: 2px; /* Adjust height as needed */
         </div>
       </div>
     </div>
-    <p style="text-align: center; margin-top: 10px;">1oz Gold Bar - Carbon Neutral Lady Fortuna</p>
+    <!-- <p style="text-align: center; margin-top: 10px;">1oz Gold Bar - Carbon Neutral Lady Fortuna</p> -->
 
 
   </div>
@@ -490,7 +510,7 @@ height: 2px; /* Adjust height as needed */
         </div>
       </div>
     </div>
-    <p style="text-align: center; margin-top: 10px;">Fortuna Gold Minted Bar</p>
+    <!-- <p style="text-align: center; margin-top: 10px;">Fortuna Gold Minted Bar</p> -->
   </div>
 
   <!-- <div class=" col-lg-3 col-md-3 col-sm-6 col-xs-12 filter hdpe" style="">
@@ -521,10 +541,10 @@ height: 2px; /* Adjust height as needed */
         </div>
       </div>
     </div>
-    <p style="text-align: center; margin-top: 10px;">Fortuna Gold Minted Bar - 100g/au</p>
+    <!-- <p style="text-align: center; margin-top: 10px;">Fortuna Gold Minted Bar - 100g/au</p> -->
 </div>
 
-<!-- <div class=" col-lg-3 col-md-3 col-sm-6 col-xs-12 filter hdpe">
+ <div class=" col-lg-3 col-md-3 col-sm-6 col-xs-12 filter hdpe">
   <div class="flipper-container">
     <div class="flip">
       <div class="front face text-center">
@@ -536,14 +556,16 @@ height: 2px; /* Adjust height as needed */
       </div>
     </div>
   </div>
-  <p style="text-align: center; margin-top: 10px;">Fortuna Gold Minted Bar</p>
-</div> -->
+  <!-- <p style="text-align: center; margin-top: 10px;">Fortuna Gold Minted Bar</p> -->
+</div> -
   <!-- Repeat the above divs for other cards -->
 </div>
 
-
-
-  
+<a href="gallery.html">
+  <button type="button" style="font-size: 24px; padding: 10px 20px; text-align: center; background-color: orange; color: white; border: none; cursor: pointer;margin-left: 700px; margin-bottom: 50px; border-radius: 5px; margin-top: 30px;">
+    View Products
+  </button>
+</a>
 
   <footer class="bg-footer-black" id="footer">
     <div class="container py-7 px-md-5">
